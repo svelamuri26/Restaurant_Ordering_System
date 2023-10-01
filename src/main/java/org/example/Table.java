@@ -3,7 +3,12 @@ package org.example;
 public class Table {
 
     int tableNumber;
-    String isAvailable;
+    boolean isAvailable;
+
+    public Table(int tableNumber, boolean isAvailable) {
+        this.tableNumber = tableNumber;
+        this.isAvailable = isAvailable;
+    }
 
     public int getTableNumber() {
         return tableNumber;
@@ -13,11 +18,11 @@ public class Table {
         this.tableNumber = tableNumber;
     }
 
-    public String getIsAvailable() {
+    public boolean getIsAvailable() {
         return isAvailable;
     }
 
-    public void setIsAvailable(String isAvailable) {
+    public void setIsAvailable(boolean isAvailable) {
         this.isAvailable = isAvailable;
     }
 }

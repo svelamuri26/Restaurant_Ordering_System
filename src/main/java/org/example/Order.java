@@ -1,31 +1,28 @@
 package org.example;
 
-public class Order {
+import java.util.List;
 
+public class Order {
     int orderID;
-    String foodItems;
+    List<FoodItem> foodItems;
     double totalPrice;
+
 
     public int getOrderID() {
         return orderID;
     }
-
     public void setOrderID(int orderID) {
         this.orderID = orderID;
     }
-
-    public String getFoodItems() {
-        return foodItems;
+    public List<FoodItem> getFoodItems() {
+        return this.foodItems;
     }
-
-    public void setFoodItems(String foodItems) {
+    public void setFoodItems(List<FoodItem> foodItems) {
         this.foodItems = foodItems;
     }
-
     public double getTotalPrice() {
         return totalPrice;
     }
-
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
